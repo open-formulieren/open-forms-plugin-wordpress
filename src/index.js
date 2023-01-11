@@ -5,20 +5,19 @@
  */
 import { registerBlockType } from '@wordpress/blocks';
 
-/**
- * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
- * All files containing `style` keyword are bundled together. The code used
- * gets applied both to the front of your site and to the editor.
- *
- * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
- */
-import './style.scss';
 
 /**
  * Internal dependencies
  */
 import Edit from './edit';
 import metadata from './block.json';
+
+/**
+ * Custom icons.
+ * 
+ * @see https://developer.wordpress.org/block-editor/reference-guides/components/icon/
+ */
+import OpenGemIcon from './icons';
 
 /**
  * Every block starts by registering a new block type definition.
@@ -30,4 +29,11 @@ registerBlockType( metadata.name, {
 	 * @see ./edit.js
 	 */
 	edit: Edit,
+	icon: OpenGemIcon,
+	attributes: {
+		formId: {
+		  	default: '',
+		  	type: 'string',
+		},
+	  },
 } );
