@@ -3,7 +3,7 @@ Contributors:      Maykin
 Tags:              openforms, block, commonground
 Tested up to:      6.1
 Stable tag:        0.1.0
-License:           MIT
+License:           GPLv2 or later
 License URI:       https://github.com/open-formulieren/open-forms-plugin-wordpress/LICENSE
 
 Easily integrate Open Forms in your Wordpress website.

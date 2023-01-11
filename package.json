@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"description": "Easily integrate Open Forms in your Wordpress website.",
 	"author": "Maykin",
-	"license": "MIT",
+	"license": "GPLv2",
 	"homepage": "https://www.maykinmedia.nl",
 	"main": "build/index.js",
 	"scripts": {

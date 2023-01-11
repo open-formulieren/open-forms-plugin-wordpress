@@ -1,5 +1,3 @@
-# Copyright (C) 2023 Maykin
-# This file is distributed under the MIT.
 msgid ""
 msgstr ""
 "Project-Id-Version: Open Forms 0.1.0\n"

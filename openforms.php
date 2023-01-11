@@ -7,7 +7,7 @@
  * Requires PHP:      7.0
  * Version:           0.1.0
  * Author:            Maykin
- * License:           MIT
+ * License:           GPLv2 or later
  * License URI:       https://github.com/open-formulieren/open-forms-plugin-wordpress/LICENSE
  * Text Domain:       openforms
  *

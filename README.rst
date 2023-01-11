@@ -31,14 +31,14 @@ Licence
 
 Copyright © `Maykin`_ 2023
 
-Licensed under the `MIT`_.
+Licensed under the `GPLv2 or later`_.
 
 Inspired by `Wordpress-Plugin-Boilerplate`_ and blogposts on `Wholesome Code`_ 
 and `A White Pixel`_.
 
 
 .. _`Maykin`: https://www.maykinmedia.nl
-.. _`MIT`: LICENSE
+.. _`GPLv2 or later`: LICENSE
 .. _`Open Forms`: https://github.com/open-formulieren/open-forms
 .. _`Open Forms SDK`: https://github.com/open-formulieren/open-forms-sdk
 .. _`Sentry`: https://sentry.io/
