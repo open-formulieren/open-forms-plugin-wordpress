@@ -1,0 +1,151 @@
+# Copyright (C) 2023 Maykin
+# This file is distributed under the MIT.
+msgid ""
+msgstr ""
+"Project-Id-Version: Open Forms 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/open-forms-client-wordpress\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-01-09T10:23:33+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: openforms\n"
+
+#. Plugin Name of the plugin
+#: includes/openforms-admin.class.php:179
+#: _backup/edit.js:104
+msgid "Open Forms"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/open-formulieren/open-forms-plugin-wordpress"
+msgstr ""
+
+#. Description of the plugin
+msgid "Easily integrate Open Forms in your Wordpress website."
+msgstr ""
+
+#. Author of the plugin
+msgid "Maykin"
+msgstr ""
+
+#: includes/openforms-admin.class.php:77
+msgid "API root URL"
+msgstr ""
+
+#: includes/openforms-admin.class.php:84
+msgid "The root URL of the Open Forms API. Example: https://forms.example.com/api/v1/"
+msgstr ""
+
+#: includes/openforms-admin.class.php:90
+msgid "Token"
+msgstr ""
+
+#: includes/openforms-admin.class.php:97
+msgid "The Open Forms API token value. Example: 7ab84e80b3d68d52a5f9e1712e3d0eda27d21e58"
+msgstr ""
+
+#: includes/openforms-admin.class.php:104
+msgid "SDK"
+msgstr ""
+
+#: includes/openforms-admin.class.php:111
+msgid "SDK CSS URL"
+msgstr ""
+
+#: includes/openforms-admin.class.php:118
+msgid "The Open Forms SDK stylesheet URL. Example: https://forms.example.com/static/sdk/open-forms-sdk.css"
+msgstr ""
+
+#: includes/openforms-admin.class.php:124
+msgid "SDK JS URL"
+msgstr ""
+
+#: includes/openforms-admin.class.php:131
+msgid "The Open Forms SDK JavaScript URL. Example: https://forms.example.com/static/sdk/open-forms-sdk.js"
+msgstr ""
+
+#: includes/openforms-admin.class.php:138
+msgid "Advanced"
+msgstr ""
+
+#: includes/openforms-admin.class.php:145
+msgid "Sentry DSN"
+msgstr ""
+
+#: includes/openforms-admin.class.php:152
+msgid "The <a href=\"https://sentry.io/\">Sentry</a> DSN."
+msgstr ""
+
+#: includes/openforms-admin.class.php:158
+msgid "Sentry environment"
+msgstr ""
+
+#: includes/openforms-admin.class.php:165
+msgid "The environment name to register Sentry errors in. Example: production"
+msgstr ""
+
+#: includes/openforms-admin.class.php:178
+msgid "Open Forms client configuration"
+msgstr ""
+
+#: includes/openforms-admin.class.php:247
+msgid "Save"
+msgstr ""
+
+#: includes/openforms-client.class.php:19
+msgid "No response."
+msgstr ""
+
+#: includes/openforms-client.class.php:25
+msgid "Invalid response."
+msgstr ""
+
+#. translators: %s: Error message
+#: includes/openforms-client.class.php:120
+#: includes/openforms-client.class.php:128
+msgid "Server error: %s"
+msgstr ""
+
+#: build/index.js:75
+#: src/edit.js:53
+#: _backup/edit.js:108
+#: build/index.js:53
+msgid "Select one of the available forms in Open Forms."
+msgstr ""
+
+#: build/index.js:76
+#: src/edit.js:54
+#: _backup/edit.js:109
+#: build/index.js:54
+msgid "Form"
+msgstr ""
+
+#: build/index.js:83
+#: src/edit.js:58
+#: build/index.js:58
+msgid "Select a form"
+msgstr ""
+
+#: build/index.js:97
+#: src/edit.js:68
+#: build/index.js:68
+msgid "More information about Open Forms"
+msgstr ""
+
+#: build/block.json
+#: src/block.json
+#: _backup/block.json
+msgctxt "block title"
+msgid "Open Forms"
+msgstr ""
+
+#: build/block.json
+#: src/block.json
+#: _backup/block.json
+msgctxt "block description"
+msgid "Embed an Open Forms form in your page."
+msgstr ""

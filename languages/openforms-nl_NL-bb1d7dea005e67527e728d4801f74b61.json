@@ -1,0 +1,27 @@
+{
+    "translation-revision-date": "2023-01-09 09:23+0000",
+    "generator": "Loco https://localise.biz/",
+    "source": "src/edit.js",
+    "domain": "openforms",
+    "locale_data": {
+        "openforms": {
+            "": {
+                "domain": "openforms",
+                "lang": "nl_NL",
+                "plural-forms": "nplurals=2; plural=n != 1;"
+            },
+            "Form": [
+                "Formulier"
+            ],
+            "More information about Open Forms": [
+                "Meer informatie over Open Formulieren"
+            ],
+            "Select a form": [
+                "Selecteer een formulier"
+            ],
+            "Select one of the available forms in Open Forms.": [
+                "Selecteer een formulier uit Open Formulieren."
+            ]
+        }
+    }
+}
