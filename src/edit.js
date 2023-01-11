@@ -14,12 +14,96 @@ import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
 
 /**
- * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
- * Those files can contain any CSS code that gets applied to the editor.
- *
- * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
+ * Generic components to built our edit component.
+ * 
+ * @see https://developer.wordpress.org/block-editor/reference-guides/components/
  */
-import './editor.scss';
+import {
+	SelectControl,
+	Placeholder,
+	ExternalLink,
+	Spinner,
+} from '@wordpress/components';
+import { Component } from '@wordpress/element';
+
+/**
+ * Custom icons.
+ * 
+ * @see https://developer.wordpress.org/block-editor/reference-guides/components/icon/
+ */
+import OpenGemIcon from './icons';
+
+
+class BlockEdit extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			formId: null,
+			formList: [],
+			loading: true
+		}
+	}
+ 
+	componentDidMount() {
+		this.runApiFetch();
+	}
+ 
+	runApiFetch() {
+		wp.apiFetch({
+			path: 'openforms/v1/forms',
+		}).then(data => {
+			this.setState({
+				formList: data,
+				loading: false
+			});
+		});
+	}
+ 
+	render() {
+		const {
+			formId,
+			formList,
+			loading,
+		} = this.state;
+
+		const { setAttributes } = this.props;
+
+		return(
+			<Placeholder
+				icon={ OpenGemIcon }
+				label={ __( 'Open Forms', 'openforms' ) }
+				isColumnLayout={ true }
+			>
+
+				{ loading ? (
+
+					<Spinner />
+
+				) : (
+					<SelectControl
+						help={ __( 'Select one of the available forms in Open Forms.', 'openforms' ) }
+						label={ __( 'Form', 'openforms' ) }
+						onChange={ ( formId ) => { this.setState( { formId } ); setAttributes( { formId } ) } }
+						value={ formId }
+						options={ formList.map( ( formOption, i ) => {     
+							return { value: formOption.slug, label: formOption.name }
+							} ) }
+					/>
+				)}
+
+				<ExternalLink
+					href={ 'https://opengem.nl/producten/open-formulieren/' }
+				>
+					{ __( 'More information about Open Forms', 'openforms' ) }
+				</ExternalLink>
+
+
+			</Placeholder>
+
+		);
+ 
+	}
+}
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -29,10 +113,10 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit() {
+export default function Edit( props ) {
 	return (
 		<p { ...useBlockProps() }>
-			{ __( 'Open Forms – hello from the editor!', 'openforms' ) }
+			<BlockEdit { ...props }/>
 		</p>
 	);
 }
