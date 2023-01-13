@@ -35,10 +35,10 @@ import OpenGemIcon from './icons';
 
 
 class BlockEdit extends Component {
-	constructor(props) {
-		super(props);
+	constructor() {
+		super( ...arguments );
+
 		this.state = {
-			formId: null,
 			formList: [],
 			loading: true
 		}
@@ -61,12 +61,11 @@ class BlockEdit extends Component {
  
 	render() {
 		const {
-			formId,
 			formList,
 			loading,
 		} = this.state;
 
-		const { setAttributes } = this.props;
+		const { attributes, setAttributes } = this.props;
 
 		return(
 			<Placeholder
@@ -83,11 +82,11 @@ class BlockEdit extends Component {
 					<SelectControl
 						help={ __( 'Select one of the available forms in Open Forms.', 'openforms' ) }
 						label={ __( 'Form', 'openforms' ) }
-						onChange={ ( formId ) => { this.setState( { formId } ); setAttributes( { formId } ) } }
-						value={ formId }
+						onChange={ ( formId ) => setAttributes( { formId } ) }
+						value={ attributes.formId }
 						options={ formList.map( ( formOption, i ) => {     
 							return { value: formOption.slug, label: formOption.name }
-							} ) }
+						} ) }
 					/>
 				)}
 
