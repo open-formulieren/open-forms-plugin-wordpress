@@ -52,10 +52,9 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 class BlockEdit extends _wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super(...arguments);
     this.state = {
-      formId: null,
       formList: [],
       loading: true
     };
@@ -75,11 +74,11 @@ class BlockEdit extends _wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Componen
   }
   render() {
     const {
-      formId,
       formList,
       loading
     } = this.state;
     const {
+      attributes,
       setAttributes
     } = this.props;
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Placeholder, {
@@ -89,15 +88,10 @@ class BlockEdit extends _wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Componen
     }, loading ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Spinner, null) : (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
       help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select one of the available forms in Open Forms.', 'openforms'),
       label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Form', 'openforms'),
-      onChange: formId => {
-        this.setState({
-          formId
-        });
-        setAttributes({
-          formId
-        });
-      },
-      value: formId,
+      onChange: formId => setAttributes({
+        formId
+      }),
+      value: attributes.formId,
       options: formList.map((formOption, i) => {
         return {
           value: formOption.slug,
