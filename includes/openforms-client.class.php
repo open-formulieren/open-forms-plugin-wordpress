@@ -70,7 +70,8 @@ class Client {
             $url, 
             array( 
                 'method' => strtoupper( $method ), 
-                'headers' => $headers 
+                'headers' => $headers,
+                'timeout' => 2.0,
             ) 
         );
 
@@ -115,7 +116,7 @@ class Client {
                     $message = $data->title;
                 }
                 else {
-                    $message = printf(
+                    $message = sprintf(
                         /* translators: %s: Error message */
                         __("Server error: %s", "openforms" ),
                         $e->getMessage()
@@ -123,7 +124,7 @@ class Client {
                 }
             }
             catch (Exception $e) {
-                $message = printf(
+                $message = sprintf(
                     /* translators: %s: Error message */
                     __("Server error: %s", "openforms" ),
                     $e->getMessage()
