@@ -9,27 +9,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-01-08T21:08:50+01:00\n"
-"PO-Revision-Date: 2023-01-09 09:23+0000\n"
+"PO-Revision-Date: 2023-01-19 12:22+0000\n"
 "Language: nl_NL\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: openforms\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.6.3; wp-6.1.1\n"
 
-#: includes/openforms-admin.class.php:138
+#: includes/openforms-admin.class.php:111
 msgid "Advanced"
 msgstr "Geavanceerd"
 
-#: includes/openforms-admin.class.php:77
+#: includes/openforms-admin.class.php:50
 msgid "API root URL"
 msgstr "API basis URL"
 
-#: build/block.json src/block.json _backup/block.json
+#: build/block.json
 msgctxt "block description"
 msgid "Embed an Open Forms form in your page."
 msgstr "Voeg een Open Formulieren formulier toe aan je pagina."
 
-#: build/block.json src/block.json _backup/block.json
+#: build/block.json
 msgctxt "block title"
 msgid "Open Forms"
 msgstr "Open Formulieren"
@@ -38,7 +38,7 @@ msgstr "Open Formulieren"
 msgid "Easily integrate Open Forms in your Wordpress website."
 msgstr "Integreer Open Formulieren eenvoudig in je Wordpress website."
 
-#: build/index.js:76 src/edit.js:54 _backup/edit.js:109 build/index.js:54
+#: build/index.js:90 build/index.js:84
 msgid "Form"
 msgstr "Formulier"
 
@@ -54,7 +54,7 @@ msgstr "Ongeldig antwoord."
 msgid "Maykin"
 msgstr ""
 
-#: build/index.js:97 src/edit.js:68 build/index.js:68
+#: build/index.js:103 build/index.js:96
 msgid "More information about Open Forms"
 msgstr "Meer informatie over Open Formulieren"
 
@@ -63,63 +63,55 @@ msgid "No response."
 msgstr "Geen antwoord"
 
 #. Plugin Name of the plugin
-#: includes/openforms-admin.class.php:179 _backup/edit.js:104
+#: includes/openforms-admin.class.php:150 build/index.js:86 build/index.js:73
 msgid "Open Forms"
 msgstr "Open Formulieren"
 
-#: includes/openforms-admin.class.php:178
+#: includes/openforms-admin.class.php:149
 msgid "Open Forms client configuration"
 msgstr "Open Formulieren client configuratie"
 
-#: includes/openforms-admin.class.php:247
+#: includes/openforms-admin.class.php:221
 msgid "Save"
 msgstr "Opslaan"
 
-#: includes/openforms-admin.class.php:104
+#: includes/openforms-admin.class.php:77
 msgid "SDK"
 msgstr ""
 
-#: includes/openforms-admin.class.php:111
+#: includes/openforms-admin.class.php:84
 msgid "SDK CSS URL"
 msgstr ""
 
-#: includes/openforms-admin.class.php:124
+#: includes/openforms-admin.class.php:97
 msgid "SDK JS URL"
 msgstr ""
 
-#: build/index.js:83 src/edit.js:58 build/index.js:58
-msgid "Select a form"
-msgstr "Selecteer een formulier"
-
-#: build/index.js:75 src/edit.js:53 _backup/edit.js:108 build/index.js:53
+#: build/index.js:89 build/index.js:83
 msgid "Select one of the available forms in Open Forms."
 msgstr "Selecteer een formulier uit Open Formulieren."
 
-#: includes/openforms-admin.class.php:145
+#: includes/openforms-admin.class.php:118
 msgid "Sentry DSN"
 msgstr "Sentry DSN"
 
-#: includes/openforms-admin.class.php:158
+#: includes/openforms-admin.class.php:131
 msgid "Sentry environment"
 msgstr "Sentry omgeving"
 
 #. translators: %s: Error message
-#: includes/openforms-client.class.php:120
-#: includes/openforms-client.class.php:128
+#: includes/openforms-client.class.php:121
+#: includes/openforms-client.class.php:129
 msgid "Server error: %s"
 msgstr "Server fout: %s"
 
-#: includes/openforms-admin.class.php:152
-msgid "The <a href=\"https://sentry.io/\">Sentry</a> DSN."
-msgstr "De <a href=\"https://sentry.io/\">Sentry</a> DSN."
-
-#: includes/openforms-admin.class.php:165
+#: includes/openforms-admin.class.php:138
 msgid "The environment name to register Sentry errors in. Example: production"
 msgstr ""
 "De omgevingsnaam om Sentry foutmeldingen onder te registreren. Bijvoorbeeld: "
 "productie"
 
-#: includes/openforms-admin.class.php:97
+#: includes/openforms-admin.class.php:70
 msgid ""
 "The Open Forms API token value. Example: "
 "7ab84e80b3d68d52a5f9e1712e3d0eda27d21e58"
@@ -127,7 +119,7 @@ msgstr ""
 "Het Open Formulieren API token. Bijvoorbeeld: "
 "7ab84e80b3d68d52a5f9e1712e3d0eda27d21e58"
 
-#: includes/openforms-admin.class.php:131
+#: includes/openforms-admin.class.php:104
 msgid ""
 "The Open Forms SDK JavaScript URL. Example: https://forms.example."
 "com/static/sdk/open-forms-sdk.js"
@@ -135,7 +127,7 @@ msgstr ""
 "De Open Formulieren SDK JavaScript URL. Bijvoorbeeld: https://forms.example."
 "com/static/sdk/open-forms-sdk.js"
 
-#: includes/openforms-admin.class.php:118
+#: includes/openforms-admin.class.php:91
 msgid ""
 "The Open Forms SDK stylesheet URL. Example: https://forms.example."
 "com/static/sdk/open-forms-sdk.css"
@@ -143,7 +135,7 @@ msgstr ""
 "De Open Formulieren SDK stylesheet URL. Bijvoorbeeld: https://forms.example."
 "com/static/sdk/open-forms-sdk.css"
 
-#: includes/openforms-admin.class.php:84
+#: includes/openforms-admin.class.php:57
 msgid ""
 "The root URL of the Open Forms API. Example: https://forms.example."
 "com/api/v1/"
@@ -151,6 +143,10 @@ msgstr ""
 "De basis URL van de Open Formulieren API. Bijvoorbeeld: https://forms."
 "example.com/api/v1/"
 
-#: includes/openforms-admin.class.php:90
+#: includes/openforms-admin.class.php:125
+msgid "The Sentry DSN (see Sentry.io)."
+msgstr "De Sentry DSN (zie Sentry.io)."
+
+#: includes/openforms-admin.class.php:63
 msgid "Token"
 msgstr "Token"

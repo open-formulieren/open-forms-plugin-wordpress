@@ -122,7 +122,7 @@ class OpenForms_Admin {
 			array(
 				"key"=>"openforms_sentry_dsn",
 				"help_text"=>
-				__( 'The <a href="https://sentry.io/">Sentry</a> DSN.', 'openforms' )
+				__( 'The Sentry DSN (see Sentry.io).', 'openforms' )
 			)
 		);
 
@@ -172,13 +172,13 @@ class OpenForms_Admin {
 	public static function openforms_char_field( $args ) {
 		$field_name = $args['key'];
 		$field_id = $field_name . "_field";
-		$field_value = esc_attr( get_option( $field_name ) );
+		$field_value = get_option( $field_name );
 		$field_help_text = $args['help_text'];
 
 		?>
 
-			<input type="text" id="<?= $field_id; ?>" name="<?= $field_name; ?>" value="<?= $field_value; ?>" size="50" />
-			<?php if ( $field_help_text ): ?><p class="description" id="tagline-description"><?= $field_help_text; ?></p><?php endif; ?>
+			<input type="text" id="<?php echo esc_attr( $field_id ); ?>" name="<?php echo esc_attr( $field_name ); ?>" value="<?php echo esc_attr( $field_value ); ?>" size="50" />
+			<?php if ( $field_help_text ): ?><p class="description" id="tagline-description"><?php echo esc_html( $field_help_text ); ?></p><?php endif; ?>
 		<?php
 	}
 
