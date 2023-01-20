@@ -2,7 +2,7 @@
 Contributors:      Maykin
 Tags:              openforms, block, commonground
 Tested up to:      6.1
-Stable tag:        0.1.0
+Stable tag:        0.1.1
 License:           GPLv2 or later
 License URI:       https://github.com/open-formulieren/open-forms-plugin-wordpress/LICENSE
 
@@ -85,6 +85,6 @@ properly configured.
 
 == Changelog ==
 
-= 0.1.0 =
+= 0.1.1 =
 
 * Initial release

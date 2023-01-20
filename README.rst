@@ -3,7 +3,7 @@
 Open Forms plugin (for Wordpress)
 =================================
 
-:Version: 0.1.0
+:Version: 0.1.1
 :Source: https://github.com/open-formulieren/open-forms-plugin-wordpress
 :Keywords: Open Forms, plugin, Wordpress
 

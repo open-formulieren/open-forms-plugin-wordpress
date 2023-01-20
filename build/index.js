@@ -249,7 +249,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"openforms/form","version":"0.1.0","title":"Open Forms","category":"embed","icon":"forms","description":"Embed an Open Forms form in your page.","supports":{"html":false},"textdomain":"openforms","editorScript":"file:./index.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"openforms/form","version":"0.1.1","title":"Open Forms","category":"embed","icon":"forms","description":"Embed an Open Forms form in your page.","supports":{"html":false},"textdomain":"openforms","editorScript":"file:./index.js"}');
 
 /***/ })
 
