@@ -7,44 +7,7 @@
  */
 
 
- /**
-  * Raises an exception if a response status is returned other than 2xx.
-  *
-  * Inspired by Python requests library.
-  *
-  * @param response The response array returned by wp_remote_request
-  */
-function raise_for_status( $response ) {
-    if ( ! $response ) {
-        throw new Exception( __( 'No response.', 'openforms' ) );
-    }
-
-    $response_code = wp_remote_retrieve_response_code( $response );
-
-    if ( $response_code < 200 || $response_code > 299 ) {
-        throw new Exception( __( 'Invalid response.', 'openforms' ) );
-    }
-}
-
- /**
-  * Raises an exception if a response status is returned other than 2xx.
-  *
-  * Inspired by Python requests library.
-  *
-  * @param response The WP response object.
-  */
-function json( $response ) {
-    $data = wp_remote_retrieve_body( $response );
-
-    if ( ! empty( $data ) ) {
-        return json_decode( $data );
-    }
-
-    return false;
-}
-
-
-class Client {
+class OpenForms_Client {
     private $api_root;
     private $api_token;
   
@@ -99,7 +62,7 @@ class Client {
             # We do a head request to actually hit a protected endpoint without
             # getting a whole bunch of data.
             $response = $this->request("head", "forms");
-            raise_for_status( $response );
+            OpenForms_Utils::raise_for_status( $response );
             return array( 'true', "" );
         }
         catch (Exception $e) {
@@ -107,7 +70,7 @@ class Client {
             # error message provided by Open Forms.
             try {
                 $response = $this->request("get", "forms");
-                $data = json( $response );
+                $data = OpenForms_Utils::json( $response );
 
                 if ( ! empty( $data->detail ) ) {
                     $message = $data->detail;
@@ -142,9 +105,9 @@ class Client {
      */        
     public function get_forms() {
         $response = $this->request("get", "forms");
-        raise_for_status( $response );
+        OpenForms_Utils::raise_for_status( $response );
 
-        return json( $response );
+        return OpenForms_Utils::json( $response );
     }
 
     /**
@@ -155,9 +118,9 @@ class Client {
      */
     public function get_form( $uuid_or_slug ) {
         $response = $this->request("get", "forms/" . $uuid_or_slug);
-        raise_for_status( $response );
+        OpenForms_Utils::raise_for_status( $response );
 
-        return json( $response );
+        return OpenForms_Utils::json( $response );
     }
 
 }

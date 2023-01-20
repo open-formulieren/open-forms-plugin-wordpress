@@ -8,7 +8,7 @@ import { Icon } from '@wordpress/components';
 /**
  * Open Gemeente Intiatief logo.
  */
-const OpenGemIcon = () => (
+const OpenForms_OpenGemIcon = () => (
 	<Icon
 		icon={
 			<svg class="logo__image" height="48px" version="1.1" viewBox="0 0 48 48" width="48px">
@@ -18,4 +18,4 @@ const OpenGemIcon = () => (
 	/>
 );
 
-export default OpenGemIcon;
+export default OpenForms_OpenGemIcon;

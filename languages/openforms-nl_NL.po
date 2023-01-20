@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-01-08T21:08:50+01:00\n"
-"PO-Revision-Date: 2023-01-19 12:22+0000\n"
+"PO-Revision-Date: 2023-01-20 11:10+0000\n"
 "Language: nl_NL\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: openforms\n"
@@ -46,7 +46,7 @@ msgstr "Formulier"
 msgid "https://github.com/open-formulieren/open-forms-plugin-wordpress"
 msgstr ""
 
-#: includes/openforms-client.class.php:25
+#: includes/openforms-utils.class.php:56
 msgid "Invalid response."
 msgstr "Ongeldig antwoord."
 
@@ -58,7 +58,7 @@ msgstr ""
 msgid "More information about Open Forms"
 msgstr "Meer informatie over Open Formulieren"
 
-#: includes/openforms-client.class.php:19
+#: includes/openforms-utils.class.php:50
 msgid "No response."
 msgstr "Geen antwoord"
 
@@ -100,8 +100,8 @@ msgid "Sentry environment"
 msgstr "Sentry omgeving"
 
 #. translators: %s: Error message
-#: includes/openforms-client.class.php:121
-#: includes/openforms-client.class.php:129
+#: includes/openforms-client.class.php:84
+#: includes/openforms-client.class.php:92
 msgid "Server error: %s"
 msgstr "Server fout: %s"
 

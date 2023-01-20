@@ -192,8 +192,8 @@ class OpenForms_Admin {
 			return;
 		}
 
-		require_once plugin_dir_path( __FILE__ ) . 'openformsutils.class.php';
-		$client = OpenFormsUtils::get_client();
+		require_once plugin_dir_path( __FILE__ ) . 'openforms-utils.class.php';
+		$client = OpenForms_Utils::get_client();
 		
 		// Check if the plugin is configured.
 		if ( $client->has_config() ) {

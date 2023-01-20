@@ -31,10 +31,10 @@ import { Component } from '@wordpress/element';
  * 
  * @see https://developer.wordpress.org/block-editor/reference-guides/components/icon/
  */
-import OpenGemIcon from './icons';
+import OpenForms_OpenGemIcon from './icons';
 
 
-class BlockEdit extends Component {
+class OpenForms_BlockEdit extends Component {
 	constructor() {
 		super( ...arguments );
 
@@ -69,7 +69,7 @@ class BlockEdit extends Component {
 
 		return(
 			<Placeholder
-				icon={ OpenGemIcon }
+				icon={ OpenForms_OpenGemIcon }
 				label={ __( 'Open Forms', 'openforms' ) }
 				isColumnLayout={ true }
 			>
@@ -112,10 +112,10 @@ class BlockEdit extends Component {
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit( props ) {
+export default function OpenForms_Edit( props ) {
 	return (
 		<p { ...useBlockProps() }>
-			<BlockEdit { ...props }/>
+			<OpenForms_BlockEdit { ...props }/>
 		</p>
 	);
 }

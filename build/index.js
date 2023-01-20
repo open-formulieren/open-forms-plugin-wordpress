@@ -10,7 +10,7 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Edit)
+/* harmony export */   "default": () => (/* binding */ OpenForms_Edit)
 /* harmony export */ });
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
@@ -51,7 +51,7 @@ __webpack_require__.r(__webpack_exports__);
  * @see https://developer.wordpress.org/block-editor/reference-guides/components/icon/
  */
 
-class BlockEdit extends _wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Component {
+class OpenForms_BlockEdit extends _wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Component {
   constructor() {
     super(...arguments);
     this.state = {
@@ -112,8 +112,8 @@ class BlockEdit extends _wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Componen
  *
  * @return {WPElement} Element to render.
  */
-function Edit(props) {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props));
+function OpenForms_Edit(props) {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(OpenForms_BlockEdit, props));
 }
 
 /***/ }),
@@ -143,7 +143,7 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Open Gemeente Intiatief logo.
  */
-const OpenGemIcon = () => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Icon, {
+const OpenForms_OpenGemIcon = () => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Icon, {
   icon: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
     class: "logo__image",
     height: "48px",
@@ -189,7 +189,7 @@ const OpenGemIcon = () => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.cre
     "stroke-width": "3.44064"
   })))
 });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (OpenGemIcon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (OpenForms_OpenGemIcon);
 
 /***/ }),
 

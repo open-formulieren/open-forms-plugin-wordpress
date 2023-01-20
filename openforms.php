@@ -20,9 +20,9 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
- * Include OpenFormsUtils class.
+ * Include OpenForms_Utils class.
  */
-require_once plugin_dir_path( __FILE__ ) . 'includes/openformsutils.class.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/openforms-utils.class.php';
 
 /**
  * The core plugin class that is used to define internationalization
@@ -33,9 +33,9 @@ require plugin_dir_path( __FILE__ ) . 'includes/openforms.class.php';
 /**
  * Begins execution of the plugin.
  */
-function run_openforms() {
+function openforms_run() {
 	$plugin = new OpenForms();
 	$plugin->run();
 }
 
-run_openforms();
+openforms_run();

@@ -75,7 +75,7 @@ class OpenForms_Block {
                     'sentry_env' => get_option( 'openforms_sentry_env' ),
                 );
 
-                return OpenFormsUtils::render_to_string( 
+                return OpenForms_Utils::render_to_string( 
                     plugin_dir_path( __DIR__ ) . 'templates/openforms_form.tpl.php',
                     $context
                 );
@@ -112,7 +112,7 @@ class OpenForms_Block {
         //     return wp_send_json_error( '', 403, [] );
         // }
 
-		$client = OpenFormsUtils::get_client();
+		$client = OpenForms_Utils::get_client();
         $response = $client->get_forms();
 
         // array_map seems so nice for this but turns out to be very slow...

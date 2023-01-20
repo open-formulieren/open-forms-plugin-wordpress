@@ -9,7 +9,7 @@ import { registerBlockType } from '@wordpress/blocks';
 /**
  * Internal dependencies
  */
-import Edit from './edit';
+import OpenForms_Edit from './edit';
 import metadata from './block.json';
 
 /**
@@ -17,7 +17,7 @@ import metadata from './block.json';
  * 
  * @see https://developer.wordpress.org/block-editor/reference-guides/components/icon/
  */
-import OpenGemIcon from './icons';
+import OpenForms_OpenGemIcon from './icons';
 
 /**
  * Every block starts by registering a new block type definition.
@@ -28,8 +28,8 @@ registerBlockType( metadata.name, {
 	/**
 	 * @see ./edit.js
 	 */
-	edit: Edit,
-	icon: OpenGemIcon,
+	edit: OpenForms_Edit,
+	icon: OpenForms_OpenGemIcon,
 	attributes: {
 		formId: {
 		  	default: '',

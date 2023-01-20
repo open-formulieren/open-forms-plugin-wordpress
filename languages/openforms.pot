@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-01-19T13:19:49+01:00\n"
+"POT-Creation-Date: 2023-01-20T12:07:33+01:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: openforms\n"
@@ -97,18 +97,18 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: includes/openforms-client.class.php:19
+#. translators: %s: Error message
+#: includes/openforms-client.class.php:84
+#: includes/openforms-client.class.php:92
+msgid "Server error: %s"
+msgstr ""
+
+#: includes/openforms-utils.class.php:50
 msgid "No response."
 msgstr ""
 
-#: includes/openforms-client.class.php:25
+#: includes/openforms-utils.class.php:56
 msgid "Invalid response."
-msgstr ""
-
-#. translators: %s: Error message
-#: includes/openforms-client.class.php:121
-#: includes/openforms-client.class.php:129
-msgid "Server error: %s"
 msgstr ""
 
 #: build/index.js:89
